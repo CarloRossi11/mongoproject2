@@ -52,15 +52,60 @@ app.use(methodOverride("_method"));
 // app.use(express.json()) uncomment if using json
 app.use(morgan("tiny")); //logging
 
+const Joke = require("./models/jokes.js");
+
 ///////////////
 //Routes and Routers
 //////////////
-app.get("/", (req, res) => {
-  res.render("index.jsx", { hello: "Issa Joke" });
-});
-
 app.use("/auth", authRouter);
 app.use("/test", testRouter);
+
+//I
+app.get("/jokes", (req, res) => {
+  Joke.find({}, (error, allJokes) => {
+    res.render("Index", { fruits: allJokes });
+  });
+});
+
+//N
+app.get("/new", (req, res) => {
+  res.render("New");
+});
+
+//D
+// app.delete("/fruits/:id", (req, res) => {
+//   Fruit.findByIdAndRemove(req.params.id, (err, data) => {
+//     res.redirect("/fruits");
+//   });
+// });
+
+//U
+app.put("/jokes/:id", (req, res) => {
+  Joke.findByIdAndUpdate(
+    req.params.id,
+    req.body,
+    { new: true },
+    (err, updatedModel) => {
+      res.redirect("/");
+    }
+  );
+});
+
+//C
+app.post("/jokes", (req, res) => {
+  Joke.create(req.body, (error, joke) => {
+    res.redirect("/jokes");
+  });
+});
+
+//E
+// app.get("/fruits/:id/edit", (req, res) => {
+//   Fruit.findById(req.params.id, (err, foundFruit) => {
+//     res.render("edit.jsx", { fruit: foundFruit });
+//   });
+// });
+
+//S
 
 ////////////////////////
 //APP LISTENER
