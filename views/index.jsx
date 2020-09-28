@@ -6,6 +6,7 @@ class Index extends React.Component {
     return (
       <Layout title="The Title!">
         <h1> {this.props.hello} </h1>
+        <h2>It's not that serious...bro.</h2>
       </Layout>
     );
   }
