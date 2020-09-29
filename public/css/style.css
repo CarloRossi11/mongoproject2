@@ -2,6 +2,14 @@ body{
     background-color: #2F496E;
 }
 
+header{
+    text-align: center;
+}
+
+main{
+    text-align: center;
+}
+
 h1 {
     font-family: 'Amaranth', sans-serif;
     font-family: 'Syncopate', sans-serif;
@@ -10,6 +18,10 @@ h1 {
 h2{
     font-family: 'Amaranth', sans-serif;
     color: #F4EADE;
+}
+
+.links{
+    color: #2988BC;
 }
 
 /* 

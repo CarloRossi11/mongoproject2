@@ -14,15 +14,25 @@ class Layout extends React.Component {
           <header>
             <h1>Issa Joke</h1>
             <h2>It's not that serious...bro</h2>
+            <nav>
+              <span className="links"><a href="/auth/signup">|SignUp|</a></span>
+              <span className="links"><a href="/auth/login">|Login|</a></span>
+              <span className="links"><a href="/auth/logout">|Logout|</a></span>
+
+            </nav>
           </header>
           <main>{this.props.children}</main>
           <footer>
-            <h1>This is my footer</h1>
+            
           </footer>
         </body>
       </html>
     );
   }
 }
+
+//Other Google fonts that I like
+//Bungee Shade
+//Monoton
 
 module.exports = Layout;

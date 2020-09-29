@@ -1,0 +1,25 @@
+///////////////////////////////////
+// IMPORT SCHEMA AND MODEL
+///////////////////////////////////
+const { Schema, model } = require("mongoose");
+
+////////////////////////////////////
+// CREATE SCHEMA
+////////////////////////////////////
+
+const jokeSchema = new Schema({
+  username: { type: String, required: true},
+  name: { type: String, required: false },
+  buildUp: { type: String, required: false },
+  punchLine: { type: String, required: false },
+});
+
+////////////////////////////////////
+// CREATE MODEL
+////////////////////////////////////
+const Joke = model("joke", jokeSchema);
+
+////////////////////////////////////
+// EXPORT MODEL
+////////////////////////////////////
+module.exports = Joke;
