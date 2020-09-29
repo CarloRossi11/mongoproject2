@@ -14,6 +14,9 @@ class Index extends React.Component {
             <form action={`/jokes/${joke._id}?_method=DELETE`} method='POST'>
             <input type="submit" value="Delete"/>
             </form>
+            <form action={`/jokes/edit/${joke._id}`} method='GET'>
+            <input type="submit" value="Edit"/>
+            </form>
           </div>
         ))}
         {jokes.map((joke) => (

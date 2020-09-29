@@ -2,6 +2,7 @@ body{
     background-color: #2F496E;
     font-family: 'Amaranth', sans-serif;
     text-align: center;
+    color: #F4EADE;
 }
 
 header{
@@ -18,7 +19,7 @@ h1 {
     color: #ED8C72;
 }
 h2{
-    color: #F4EADE;
+    
 }
 
 .links{
@@ -50,6 +51,10 @@ h2{
     width:80%; 
     padding: 5px;
     max-width: 150px;
+}
+
+footer{
+    color: black;
 }
 
 

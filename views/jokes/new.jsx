@@ -10,7 +10,7 @@ class Index extends React.Component {
           <input type="text" placeholder="Joke Name" name="name"/>
           <input type="text" placeholder="Joke Content" name="buildUp"/>
           <input type="text" placeholder="Punchline" name="punchLine"/>
-          <input type="button" className="btn btn-primary" value="Full Send"/>
+          <input type="submit" className="btn btn-primary" value="Full Send"/>
         </form>
       </Layout>
     );
