@@ -14,7 +14,7 @@ class Layout extends React.Component {
         <body>
           <header>
             <h1>Issa Joke</h1>
-            <h2>It's not that serious...bro</h2>
+            <h2>It's not that serious, bro</h2>
             <nav>
               <span className="links"><a type="button" className="btn btn-outline-primary"href="/auth/signup">SignUp</a></span>
               <span className="links"><a type="button" className="btn btn-outline-primary"href="/auth/login">Login</a></span>

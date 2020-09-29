@@ -36,6 +36,12 @@ router.post("/", auth, async (req,res) =>{
   res.redirect("/jokes/")
 })
 
+//Delete\\
+router.delete("/:id", auth, async (req, res) => {
+  await Joke.findByIdAndDelete(req.params.id)
+  res.redirect("/jokes/")
+})
+
 //TEST ROUTE TO SHOW HOW AUTH MIDDLEWARE WORKS
 
 router.get("/", auth, (req, res) => {
