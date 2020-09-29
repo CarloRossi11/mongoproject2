@@ -1,13 +1,15 @@
 body{
     background-color: #2F496E;
+    font-family: 'Amaranth', sans-serif;
+    text-align: center;
 }
 
 header{
-    text-align: center;
+    
 }
 
 main{
-    text-align: center;
+    
 }
 
 h1 {
@@ -16,13 +18,40 @@ h1 {
     color: #ED8C72;
 }
 h2{
-    font-family: 'Amaranth', sans-serif;
     color: #F4EADE;
 }
 
 .links{
-    color: #2988BC;
+    margin: 5px!important;
 }
+
+.btn-outline-primary{
+    color: #F4EADE !important;
+    border-color: #2988BC!important;
+}
+.btn-outline-primary:hover{
+    color: #2988BC !important;
+    background-color: #ED8C72!important;
+}
+
+.btn-primary{
+    background-color: #2988BC;
+    border-color: #2988BC;
+    color: #F4EADE
+}
+.btn-primary:hover{
+    background-color: #ED8C72!important;
+    border-color: #ED8C72!important;
+    color: #2988BC !important;
+}
+
+.form-group{
+    margin: 0 auto;
+    width:80%; 
+    padding: 5px;
+    max-width: 150px;
+}
+
 
 /* 
 https://www.canva.com/learn/100-color-combinations/

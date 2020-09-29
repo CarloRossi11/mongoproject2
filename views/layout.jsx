@@ -6,6 +6,7 @@ class Layout extends React.Component {
       <html>
         <head>
           <title>{this.props.title}</title>
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"></link>
           <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Syncopate:wght@700&display=swap" rel="stylesheet"></link>
           <link rel="stylesheet" href="/css/style.css"/>
           <script src="/js/app.js"></script>
@@ -15,15 +16,15 @@ class Layout extends React.Component {
             <h1>Issa Joke</h1>
             <h2>It's not that serious...bro</h2>
             <nav>
-              <span className="links"><a href="/auth/signup">|SignUp|</a></span>
-              <span className="links"><a href="/auth/login">|Login|</a></span>
-              <span className="links"><a href="/auth/logout">|Logout|</a></span>
+              <span className="links"><a type="button" className="btn btn-outline-primary"href="/auth/signup">SignUp</a></span>
+              <span className="links"><a type="button" className="btn btn-outline-primary"href="/auth/login">Login</a></span>
+              <span className="links"><a type="button" className="btn btn-outline-primary"href="/auth/logout">Logout</a></span>
 
             </nav>
           </header>
           <main>{this.props.children}</main>
           <footer>
-            
+            <p>Curated by Carlo Berardelli </p>
           </footer>
         </body>
       </html>
