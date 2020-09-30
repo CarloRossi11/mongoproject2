@@ -80,6 +80,16 @@ router.put("/edit/:id", auth, async (req,res) => {
   }
 })
 
+//Show\\
+router.get("/:id", async (req,res) =>{
+  try{
+    const joke = await Joke.findById(req.params.id)
+    res.render("jokes/show.jsx", {joke: joke})}
+    catch(error){
+      console.log(error)
+    }
+})
+
 //TEST ROUTE TO SHOW HOW AUTH MIDDLEWARE WORKS
 
 router.get("/", auth, (req, res) => {

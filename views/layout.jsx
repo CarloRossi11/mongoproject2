@@ -6,6 +6,7 @@ class Layout extends React.Component {
       <html>
         <head>
           <title>{this.props.title}</title>
+          <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"></link>
           <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Syncopate:wght@700&display=swap" rel="stylesheet"></link>
           <link rel="stylesheet" href="/css/style.css"/>
@@ -18,7 +19,7 @@ class Layout extends React.Component {
           </header>
           <main>{this.props.children}</main>
           <footer>
-            <p>Curated by Carlo Berardelli </p>
+            <p>Created by Carlo Berardelli </p>
           </footer>
         </body>
       </html>

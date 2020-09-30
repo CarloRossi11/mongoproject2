@@ -7,10 +7,10 @@ class Index extends React.Component {
     return (
       <Layout title="Issa Joke">
         <nav>
-          <span className="links"><a type="button" className="btn btn-outline-primary"href="/auth/signup" data-toggle="tooltip" data-placement="left" title="Sign up to create, edit and delete your own jokes!">SignUp</a></span>
-          <span className="links"><a type="button" className="btn btn-outline-primary"href="/auth/login" data-toggle="tooltip" data-placement="right" title="Login to do the things">Login</a></span>
+          <a type="button" className="btn btn-outline-primary links"href="/auth/signup" data-toggle="tooltip" data-placement="left" title="Sign up to create, edit and delete your own jokes!">SignUp</a>
+          <a type="button" className="btn btn-outline-primary links"href="/auth/login" data-toggle="tooltip" data-placement="right" title="Login to do the things">Login</a>
         </nav>
-        <h1> {this.props.hello} </h1>
+        <h1 className= "gallery"> {this.props.hello} </h1>
         <h2 className="desc">Click a joke title to reveal its contents</h2>
         {/* Jokes will go here */}
         {/* {jokes.map((joke) => (
