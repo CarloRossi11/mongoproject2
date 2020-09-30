@@ -6,23 +6,25 @@ class Index extends React.Component {
     const {jokes} = this.props
     return (
       <Layout title="My Jokes">
-        <h1>My Jokes</h1>
-        <a href="/jokes/new"><button type="button" className="btn btn-primary">Add Joke</button></a>
+        <a href="/jokes/new"><button type="button" className="btn btn-primary hdr">Add Joke</button></a>
+        <span className="links"><a type="button" className="btn btn-outline-primary hdr"href="/auth/logout">Logout</a></span>
+        <h1 className="jokeHead">My Jokes</h1>
+
         {jokes.map((joke) => (
           <div>
             <h2>{joke.name}</h2>
-            <form action={`/jokes/${joke._id}?_method=DELETE`} method='POST'>
-            <input type="submit" value="Delete"/>
-            </form>
-            <form action={`/jokes/edit/${joke._id}`} method='GET'>
-            <input type="submit" value="Edit"/>
-            </form>
+              <div className="btn-group">
+                <form action={`/jokes/${joke._id}?_method=DELETE`} method='POST'>
+                <input type="submit" className="btn btn-outline-primary btn-sm deledit" value="Delete"/>
+                </form>
+                <form action={`/jokes/edit/${joke._id}`} method='GET'>
+                <input type="submit" className="btn btn-outline-primary btn-sm deledit" value="Edit"/>
+                </form>
+              </div>
+            <h3>{joke.buildUp}</h3>
+            <h3>{joke.punchLine}</h3>
           </div>
         ))}
-        {jokes.map((joke) => (
-          <h3>{joke.buildUp}</h3>))}
-        {jokes.map((joke) => (
-          <h3>{joke.punchLine}</h3>))}
       </Layout>
     );
   }

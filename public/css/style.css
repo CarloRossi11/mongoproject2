@@ -3,14 +3,7 @@ body{
     font-family: 'Amaranth', sans-serif;
     text-align: center;
     color: #F4EADE;
-}
-
-header{
-    
-}
-
-main{
-    
+    margin-top: 20px;
 }
 
 h1 {
@@ -18,12 +11,21 @@ h1 {
     font-family: 'Syncopate', sans-serif;
     color: #ED8C72;
 }
-h2{
-    
+
+.desc{
+    color: black;
 }
 
 .links{
-    margin: 5px!important;
+    margin: 0px 2.5px 0px 2.5px!important;
+}
+
+.hdr{
+    margin-top: 10px;
+}
+.jokeHead{
+    padding-top: 10px;
+    margin: 0px!important;
 }
 
 .btn-outline-primary{
@@ -51,6 +53,10 @@ h2{
     width:80%; 
     padding: 5px;
     max-width: 150px;
+}
+
+.deledit{
+    margin: 0px 2.5px 0px 2.5px;
 }
 
 footer{
