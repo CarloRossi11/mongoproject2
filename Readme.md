@@ -1,3 +1,38 @@
+Issa Joke Created 10/2020 by Carlo Berardelli
+
+Technologies used:
+Express
+Node Js
+React
+HTML
+JavaScript
+CSS
+Bootstrap
+Google Fonts
+
+Color Scheme: https://www.canva.com/learn/100-color-combinations/
+
+Use Case:
+When you think of or hear a good joke, add it on Issa to save it for later!
+
+Challenges: 
+- Sizing for mobile, resolved by adding meta tag in Layout
+- Adding jokes from all users to the Homepage, resolved by adjusting router in server.js
+
+Enhancements to make:
+- Adding collapsable to show/hide joke punchlines
+- voting mechanics and having the top ranked jokes appear at the top of the homepage
+
+Heroku:
+https://cbzenproject2.herokuapp.com/
+
+GitHub:
+https://github.com/CarloRossi11/mongoproject2
+
+
+
+
+////////Admin Stuff\\\\\\\\
 # Mongo - Express - Express React Views Template
 
 ## USING THIS TEMPLATE:
