@@ -1,7 +1,6 @@
 ///////////////////////////
 // Environmental Variables
 ///////////////////////////
-// REMEMBER TO CREATE .env file
 require("dotenv").config();
 const { PORT, SECRET } = process.env;
 
@@ -65,9 +64,6 @@ app.get("/", async (req,res) => {
     console.log(error)
   }
 })
-  // app.get("/", (req, res) => {
-  //   res.render("index.jsx",{jokes});
-  // });
 
 app.use("/auth", authRouter);
 app.use("/test", testRouter);

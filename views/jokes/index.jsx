@@ -12,7 +12,7 @@ class Index extends React.Component {
        
         {jokes.map((joke) => (
           <div>
-            <div className="container-sm jokeGroup">
+            <div className="container jokeGroup">
               <h2 className="name">{joke.name}</h2>
               <h4 className="build">{joke.buildUp}</h4>
               <h5 className="punch">{joke.punchLine}</h5>
