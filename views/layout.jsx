@@ -6,6 +6,7 @@ class Layout extends React.Component {
       <html>
         <head>
           <title>{this.props.title}</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
           <script
             src="https://code.jquery.com/jquery-3.5.1.js"
             integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
