@@ -7,10 +7,10 @@ class Index extends React.Component {
     return (
       <Layout title="New Joke">
         <form action="/jokes/" method = "post">
-          <input type="text" placeholder="Joke Name" name="name"/>
-          <input type="text" placeholder="Joke Content" name="buildUp"/>
-          <input type="text" placeholder="Punchline" name="punchLine"/>
-          <input type="submit" className="btn btn-primary" value="Full Send"/>
+          <input className="links" type="text" placeholder="Joke Name" name="name"/>
+          <input className="links" type="text" placeholder="Joke Content" name="buildUp"/>
+          <input className="links" type="text" placeholder="Punchline" name="punchLine"/>
+          <input className="links" type="submit" className="btn btn-primary" value="Full Send"/>
         </form>
       </Layout>
     );

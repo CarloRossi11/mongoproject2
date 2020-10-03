@@ -12,7 +12,7 @@ const { PORT, SECRET } = process.env;
 // Bringing in Express
 const express = require("express");
 const app = express();
-
+const Joke = require("./models/jokes")
 // IMPORT DATABASE CONNECTIONS
 const mongoose = require("./db/dbconn");
 
@@ -56,9 +56,18 @@ app.use(morgan("tiny")); //logging
 ///////////////
 //Routes and Routers
 //////////////
-  app.get("/", (req, res) => {
-    res.render("index.jsx",{ hello: "Joke Gallery" });
-  });
+
+app.get("/", async (req,res) => {
+  try{
+  const jokes = await Joke.find({})
+  res.render("index.jsx", {jokes})}
+  catch(error){
+    console.log(error)
+  }
+})
+  // app.get("/", (req, res) => {
+  //   res.render("index.jsx",{jokes});
+  // });
 
 app.use("/auth", authRouter);
 app.use("/test", testRouter);

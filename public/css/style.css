@@ -7,7 +7,6 @@ body{
 }
 
 h1 {
-    font-family: 'Amaranth', sans-serif;
     font-family: 'Syncopate', sans-serif;
     color: #ED8C72;
 }
@@ -26,10 +25,6 @@ h1 {
 
 .hdr{
     margin-top: 10px;
-}
-.jokeHead{
-    padding-top: 10px;
-    margin: 0px!important;
 }
 
 .btn-outline-primary{
@@ -60,12 +55,40 @@ h1 {
 }
 
 .deledit{
-    margin: 0px 2.5px 0px 2.5px;
+    margin: 15px 2.5px 0px 2.5px;
 }
 
+.container-sm{
+    background-color: #2988BC;
+    border-radius: .2rem;
+}
+
+.jokeGroup{
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.name{
+    font-family: 'Syncopate', sans-serif;
+    color: #ED8C72;
+}
+
+.build{
+    color: #F4EADE;
+}
+
+.punch{
+    color: #2F496E;
+}
+
+.submitter{
+    color:black;
+}
 footer{
+    padding-top: 50px;
     color: black;
 }
+
 
 
 /* 

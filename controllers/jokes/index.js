@@ -14,7 +14,7 @@ const router = Router();
 // ROUTES
 ///////////////////////////////////////
 
-//Index\\
+//Logged In Index\\
 router.get("/", auth, async (req,res) => {
   try{
   const jokes = await Joke.find({username: req.session.username})
