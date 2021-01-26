@@ -74,5 +74,5 @@ app.use("/jokes", jokeRouter)
 //APP LISTENER
 ////////////////////////
 app.listen(PORT, () => {
-  console.log(`Your are listening on port ${PORT}`);
+  console.log(`Cracking jokes on port ${PORT}`);
 });

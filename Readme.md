@@ -1,14 +1,14 @@
-Issa Joke Created 10/2020 by Carlo Berardelli
+Issa Joke Created 10/2020 by [Carlo Berardelli](https://carloberardelli.com/)
 
 Technologies used:
-Express
-Node Js
-React
-HTML
-JavaScript
-CSS
-Bootstrap
-Google Fonts
+- Express
+- Node Js
+- React
+- HTML
+- JavaScript
+- CSS
+- Bootstrap
+- Google Fonts
 
 Color Scheme: https://www.canva.com/learn/100-color-combinations/
 
@@ -21,7 +21,8 @@ Challenges:
 
 Enhancements to make:
 - Adding collapsable to show/hide joke punchlines
-- voting mechanics and having the top ranked jokes appear at the top of the homepage
+- Voting mechanics and having the top ranked jokes appear at the top of the homepage
+- Built with React class componenets, would like to refactor to function components
 
 Heroku:
 https://cbzenproject2.herokuapp.com/

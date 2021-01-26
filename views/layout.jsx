@@ -24,16 +24,12 @@ class Layout extends React.Component {
           </header>
           <main>{this.props.children}</main>
           <footer>
-            <p>Don't take life too seriously, nobody makes it out alive. - Site by Carlo Berardelli </p>
+            <p>Don't take life too seriously, nobody makes it out alive. - Built by <a className="promo" href="https://carloberardelli.com/">Carlo Berardelli</a></p>
           </footer>
         </body>
       </html>
     );
   }
 }
-
-//Other Google fonts that I like
-//Bungee Shade
-//Monoton
 
 module.exports = Layout;
